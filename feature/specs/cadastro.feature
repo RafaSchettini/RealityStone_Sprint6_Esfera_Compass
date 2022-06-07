@@ -8,6 +8,7 @@ Funcionalidade: Cadastro
 
     Contexto: Usuário localizado na página de login
         Dado que o usuário esteja localizado na página de login
+        E acessar página de login
 
     @sign_up_validate
     Cenário: Validar Cadastro
