@@ -1,5 +1,6 @@
 #language: pt
 
+@login
 Funcionalidade: Login
     Como usuário da plataforma Esfera
     Desejo efetuar login
@@ -8,7 +9,7 @@ Funcionalidade: Login
     Contexto: Usuário localizado na página de login
         Dado que o usuário esteja localizado na página de login
 
-
+    @login_validate
     Cenário: Validar login
         Quando o usuário informar "<dado>"
         E usuário informar "<senha>"

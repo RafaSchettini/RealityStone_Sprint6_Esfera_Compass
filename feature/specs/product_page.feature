@@ -1,5 +1,6 @@
 #language: pt
 
+@product_page
 Funcionalidade: Página do Produto
     Como usuário da plataforma Esfera
     Desejo personalizar informações de um certo produto
