@@ -7,7 +7,7 @@ Funcionalidade: Cadastro
     Para ter acesso aos produtos e serviços disponíveis 
 
     Contexto: Usuário localizado na página de login
-        Dado que o usuário esteja localizado na página de login
+        Dado que o usuário esteja na página inicial
         E acessar página de login
 
     @sign_up_validate
