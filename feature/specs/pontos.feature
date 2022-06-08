@@ -1,27 +1,25 @@
 #language: pt
 
 Funcionalidade: Pontos
-    COMO um usuário dos serviços do site Esfera
-    QUERO explorar as ações possíveis com pontos
-    PARA um melhor aproveitamento do site
+    Como um usuário da plataforma Esfera
+    Quero explorar as ações possíveis com pontos
+    Para um melhor aproveitamento do site
 
     Contexto: Estar na Home
-        Dado que esteja na Home
-        Quando optar pela compra de pontos
+        Dado que o usuário esteja na página inicial
+        Quando acessar página de compra de pontos
 
-    @sem_cupom
-    Cenário: Comprar pontos sem cupom de desconto
-        E for direcionado para a página de pagamento, efetuando este
-        Então os pontos deverão ser adicionados à conta do usuário para uso deste
-
-    @com_cupom
-    Cenário: Comprar pontos com cupom de desconto
-        E adicionar um cupom de desconto válido
-        E o valor final da compra for alterado
-        E for direcionado para a página de pagamento, efetuando este
-        Então os pontos deverão ser adicionados à conta do usuário para uso deste
-
-    @qnt_pontos
+    @change_points_qtt
     Cenário: Alterar a quantidade de pontos na compra
-        E aumentar ou diminuir a quantidade a ser comprada
-        Então o valor da compra e a quantidade de pontos exibidos em tela deverá ser alterados
+        Quando alterar a quantidade de pontos a serem comprados
+        Então o valor da compra deverá ser alterado
+    
+    @without_coupon
+    Cenário: Compra de pontos sem cupom de desconto
+        Quando alterar a quantidade de pontos a serem comprados
+        Então deverá ser redirecionado para página de pagamento
+
+    @with_coupon
+    Cenário: Aplicar cupom de desconto
+        Quando adicionar um "<cupom>"
+        Então resultados deverão ser retornados
