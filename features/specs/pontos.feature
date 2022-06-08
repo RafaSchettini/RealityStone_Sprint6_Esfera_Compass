@@ -14,12 +14,12 @@ Funcionalidade: Pontos
         Quando alterar a quantidade de pontos a serem comprados
         Então o valor da compra deverá ser alterado
     
-    @without_coupon
-    Cenário: Compra de pontos sem cupom de desconto
+    @buy_points
+    Cenário: Compra de pontos
         Quando alterar a quantidade de pontos a serem comprados
         Então deverá ser redirecionado para página de pagamento
 
-    @with_coupon
+    @apply_coupon
     Cenário: Aplicar cupom de desconto
         Quando adicionar um "<cupom>"
         Então resultados deverão ser retornados
