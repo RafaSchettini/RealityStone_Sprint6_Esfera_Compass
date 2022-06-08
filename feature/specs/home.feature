@@ -7,6 +7,10 @@ Funcionalidade: Home
 
     Contexto: Estar na home
     Dado que o usuário esteja na página inicial
+
+    @validate_products_on_home
+    Cenário: Validar produtos na home
+        Então deverá ter produtos na home
     
     @click_on_menu
     Cenário: Escolher uma categoria do menu
