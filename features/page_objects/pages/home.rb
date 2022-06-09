@@ -5,7 +5,7 @@ module Pages
 
         set_url('/')
 
-        section :header, Sections::Header, 'div[class="js-header"]'
+        section :header, Sections::Header, '.js-header'
 
         def search_for(product)
             
