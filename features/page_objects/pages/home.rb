@@ -9,11 +9,17 @@ module Pages
         section :header, Sections::Header, '.js-header'
         
         sections :products_on_home, Sections::Home, 'div[class="swiper-wrapper swiper-prod-ganhe-mais-pontos-wrapper custom-row-less"]'
-        
+        elements :menu, 'li[class="-menuitemcontainer"]'
+
         def search_for(product)
             
             header.input_and_search(product)
             
+        end
+
+        def click_on_menu(index)
+            menu[index].click
+
         end
 
     end

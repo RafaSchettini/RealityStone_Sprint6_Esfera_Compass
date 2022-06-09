@@ -14,13 +14,13 @@ Funcionalidade: Home
     
     @click_on_menu
     Cenário: Escolher uma categoria do menu
-        Quando selecionar "<categoria>" do menu
+        Quando selecionar categoria do menu
         Então deverá redirecionar para a página da categoria
 
     @click_on_sub_menu
     Cenário: Escolher tópico da categoria do menu
-        Quando selecionar "<categoria>" do menu
-        E selecionar um "<tópico>" da categoria
+        Quando selecionar categoria do menu
+        E selecionar um tópico da categoria
         Então deverá redirecionar para a página da categoria
     
     @app_download
