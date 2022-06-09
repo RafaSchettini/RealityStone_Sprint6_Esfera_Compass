@@ -14,7 +14,7 @@ URL = ENVIRONMENT_CONFIG['url']
 Capybara.register_driver :my_chrome do |app|
     caps = Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" => 
         {"args" => ["--ignore-ssl-erros", "--ignore-certificate-erros", "--disable-popup-blocking","--incognito", "--start-maximized", "--disable-gpu", 
-            "--disable-impl-side-painting", "--acceptInsecureCerts=true", "--disable-translate", "--no-sandbox"]})
+            "--disable-impl-side-painting", "--acceptInsecureCerts=true", "--disable-translate", "--no-sandbox", "window-size=1420,835"]})
     
     if ENV['HEADLESS']
         caps["goog:chromeOptions"]["args"] << '--headless'
