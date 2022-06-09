@@ -11,3 +11,8 @@ end
 Então('resultados deverão ser retornados ao usuário') do
     expect(@search_results_page).to have_products
 end
+
+Quando('realizar a busca pelo {string}') do |products|
+    @home_page.search_for(products)
+    @search_results_page = Pages::SearchResults.new
+end
