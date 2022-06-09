@@ -13,7 +13,7 @@ Funcionalidade: Carrinho
     @validate_purchase
     Cenário: Finalizar compra
         Quando informar "<cep>"
-        Então deverá seguir para página de pagamento
+        Então mensagem de validação deverá ser exibida
 
     @change_product_qtt
     Cenário: Alterar quantidade de um certo produto
