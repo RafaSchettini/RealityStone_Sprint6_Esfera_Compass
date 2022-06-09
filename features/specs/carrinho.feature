@@ -8,7 +8,7 @@ Funcionalidade: Carrinho
 
     Contexto: Usuário localizado na página do carrinho
         Dado que o usuário esteja localizado na página do carrinho
-        Quando possuir produtos adicionados ao carrinho
+        E possuir produtos adicionados ao carrinho
 
     @validate_purchase
     Cenário: Finalizar compra

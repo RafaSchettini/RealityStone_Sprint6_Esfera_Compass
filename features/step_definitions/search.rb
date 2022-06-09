@@ -4,7 +4,7 @@ Dado('que o usuário esteja na página inicial') do
 end
   
 Quando('realizar a busca por um produto') do
-    @home_page.search_for("Telefones")
+    @home_page.search_for("Jogo de Cama King 300 fios")
     @search_results_page = Pages::SearchResults.new
 end
   
