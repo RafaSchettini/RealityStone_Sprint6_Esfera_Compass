@@ -20,10 +20,10 @@ Funcionalidade: Página do Produto
         E alterar maneira de resgate
         Então botão de adicionar ao carrinho deverá ser liberado
     
-    @change_partner_store
-    Cenário: Troca de loja parceira
-        Quando o usuário alterar a loja parceira
-        Então o nome da loja parceira deverá ser alterada
+    # @change_partner_store
+    # Cenário: Troca de loja parceira
+    #     Quando o usuário alterar a loja parceira
+    #     Então o nome da loja parceira deverá ser alterada
     
     @add_product_to_cart
     Cenário: Adicionar produto ao carrinho

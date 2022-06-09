@@ -12,6 +12,19 @@ Então('o nome do produto deverá ser alterado') do
     expect(@product_page.product_name['textContent']).not_to eql @name_before
 end
 
+Quando('alterar maneira de resgate') do
+    @product_page.choose_payment_method(1)
+end
+  
+Então('botão de adicionar ao carrinho deverá ser liberado') do
+    expect(@product_page).to have_payment_button
+end
+
+Então('o produto deverá ser adicionado ao carrinho') do
+    @product_page.add_product_to_cart()
+    @cart_page = Pages::CartPage.new
+end
+
 Dado('que o usuário esteja localizado na página de um certo produto') do
     steps %{
         Dado que o usuário esteja na página inicial
