@@ -10,5 +10,4 @@ end
   
 Então('resultados deverão ser retornados ao usuário') do
     expect(@search_results_page).to have_products
-    binding.pry
 end
