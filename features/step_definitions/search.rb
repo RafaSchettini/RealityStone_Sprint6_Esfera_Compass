@@ -5,8 +5,9 @@ end
   
 Quando('realizar a busca por um produto') do
     @home_page.search_for("Telefones")
+    @search_results_page = Pages::SearchResults.new
 end
   
 Então('resultados deverão ser retornados ao usuário') do
-    pending # Write code here that turns the phrase above into concrete actions
+    # expect(@search_results_page).to have_content "Telefone"
 end
