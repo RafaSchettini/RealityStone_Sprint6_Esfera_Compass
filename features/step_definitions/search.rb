@@ -9,5 +9,5 @@ Quando('realizar a busca por um produto') do
 end
   
 Então('resultados deverão ser retornados ao usuário') do
-    # expect(@search_results_page).to have_content "Telefone"
+    expect(@search_results_page).to have_products
 end
