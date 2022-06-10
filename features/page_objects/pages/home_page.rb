@@ -12,6 +12,7 @@ module Pages
         elements :menu, 'li[class="-menuitemcontainer"]'
         elements :menu_pontos, '.-simpleactivemenu'
         elements :menu_viagens, '.-simpleactivemenu'
+        element :btn_login, 'div[class="-containersignin"] text'
 
         def search_for(product)
             
