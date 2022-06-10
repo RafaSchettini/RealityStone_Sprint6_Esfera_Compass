@@ -1,13 +1,15 @@
 Quando('acessar página de compra de pontos') do
-    @home_page = Pages::Home.new
     @home_page.click_on_menu(5)
     @home_page.click_compre_pontos(2)
+    @points_page = Pages::PointsPage.new
 end
   
 Quando('alterar a quantidade de pontos a serem comprados') do
-
+    @price_beffore = @points_page.text_img['textContent']
+    @points_page.button_adition.click
 end
   
 Então('o valor da compra deverá ser alterado') do
-    pending # Write code here that turns the phrase above into concrete actions
+    expect(@points_page.text_img['textContent']).not_to eql @price_beffore
 end
+

@@ -14,12 +14,12 @@ Funcionalidade: Pontos
         Quando alterar a quantidade de pontos a serem comprados
         Então o valor da compra deverá ser alterado
     
-    @buy_points
-    Cenário: Compra de pontos
-        Quando alterar a quantidade de pontos a serem comprados
-        Então deverá ser redirecionado para página de pagamento
-
     @apply_coupon
     Cenário: Aplicar cupom de desconto
         Quando adicionar um "<cupom>"
         Então resultados deverão ser retornados
+
+    @buy_points
+    Cenário: Compra de pontos
+        Quando alterar a quantidade de pontos a serem comprados
+        Então deverá ser redirecionado para página de pagamento
