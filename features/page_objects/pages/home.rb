@@ -23,8 +23,8 @@ module Pages
 
         end
 
-        def click_compre_pontos(index, index2)
-            menu[index].click
+        def click_compre_pontos(index2)
+            menu[5].click
             menu_pontos[index2].click
         end
 
