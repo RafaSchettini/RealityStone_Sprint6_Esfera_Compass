@@ -1,5 +1,5 @@
 Quando('acessar página de compra de pontos') do
-    @home_page.click_compre_pontos(2)
+    @home_page.click_compre_pontos(5, 2)
     @points_page = Pages::PointsPage.new
 end
   
