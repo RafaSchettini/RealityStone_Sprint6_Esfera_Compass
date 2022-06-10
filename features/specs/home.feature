@@ -19,9 +19,8 @@ Funcionalidade: Home
 
     @click_on_sub_menu
     Cenário: Escolher tópico da categoria do menu
-        Quando selecionar categoria do menu
-        E selecionar um tópico da categoria
-        Então deverá redirecionar para a página da categoria
+        Quando selecionar categoria do menu e selecionar um tópico da categoria
+        Então deverá redirecionar para a página do tópico
     
     @app_download
     Cenário: Acessar página do aplicativo

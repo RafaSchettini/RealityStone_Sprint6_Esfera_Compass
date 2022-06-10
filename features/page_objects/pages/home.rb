@@ -11,6 +11,7 @@ module Pages
         sections :products_on_home, Sections::Home, 'div[class="swiper-wrapper swiper-prod-ganhe-mais-pontos-wrapper custom-row-less"]'
         elements :menu, 'li[class="-menuitemcontainer"]'
         elements :menu_pontos, '.-simpleactivemenu'
+        elements :menu_viagens, '.-simpleactivemenu'
 
         def search_for(product)
             
@@ -25,7 +26,7 @@ module Pages
 
         def click_on_submenu(index, index2)
             menu[index].click
-            menu[index2].click
+            menu_viagens[index2].click
 
         end
 
