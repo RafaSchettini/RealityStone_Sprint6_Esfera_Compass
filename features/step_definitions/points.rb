@@ -22,3 +22,7 @@ Quando('adicionar um {string}') do |cupom|
   Então('resultados deverão ser retornados') do
     expect(@points_page).to have_text_error
   end
+
+  Então('deverá ser redirecionado para página de pagamento') do
+    @points_page.continue_button.click
+  end

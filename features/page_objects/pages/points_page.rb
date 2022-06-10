@@ -8,6 +8,6 @@ module Pages
         element :input_coupon, '.-inputcupompoints'
         element :button_apply_coupon, '.-btnapplycupom'
         element :text_error, '.util-error-message'
-
+        element :continue_button, 'div[class="-pointswidget"] button'
     end
 end
