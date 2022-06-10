@@ -23,3 +23,5 @@ Funcionalidade: Pontos
     Cenário: Compra de pontos
         Quando alterar a quantidade de pontos a serem comprados
         Então deverá ser redirecionado para página de pagamento
+
+       

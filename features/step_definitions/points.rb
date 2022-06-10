@@ -12,3 +12,13 @@ Então('o valor da compra deverá ser alterado') do
     expect(@points_page.text_img['textContent']).not_to eql @price_beffore
 end
 
+Quando('adicionar um {string}') do |cupom|
+    cupom = 'teste'
+    @points_page.add_coupon.click
+    @points_page.input_coupon.set cupom
+    @points_page.button_apply_coupon.click
+  end
+  
+  Então('resultados deverão ser retornados') do
+    expect(@points_page).to have_text_error
+  end
