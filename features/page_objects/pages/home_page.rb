@@ -15,6 +15,8 @@ module Pages
         
         element :btn_login, 'div[class="-containersignin"] text'
 
+        elements :apps, 'li[class="-itemstoreapp"] img'
+
         def search_for(product)
             
             header.input_and_search(product)

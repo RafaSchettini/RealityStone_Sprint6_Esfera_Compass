@@ -20,10 +20,19 @@ Então('deverá redirecionar para a página do tópico') do
     expect(@home_page.current_url).to eq('https://www.esfera.com.vc/esfera-viagens')
 end
 
-Quando('selecionar aplicativo da {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+Quando('selecionar aplicativo da {string}') do |plataforma|
+    @url_before = @home_page.current_url
+    
+    if(plataforma == "AppStore")
+        @home_page.apps[0].click
+        @new_url = 'https://apps.apple.com/'
+    else
+        @home_page.apps[1].click
+        @new_url = 'https://play.google.com/'
+    end
+
 end
 
 Então('deverá redirecionar para página de instalação') do
-    pending # Write code here that turns the phrase above into concrete actions
+    expect(@new_url).not_to eql @url_before
 end

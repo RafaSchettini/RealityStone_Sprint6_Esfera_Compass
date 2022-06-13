@@ -23,6 +23,11 @@ Funcionalidade: Home
         Então deverá redirecionar para a página do tópico
     
     @app_download
-    Cenário: Acessar página do aplicativo
+    Esquema do Cenário: Acessar página do aplicativo
         Quando selecionar aplicativo da "<plataforma>"
         Então deverá redirecionar para página de instalação
+
+    Exemplos:
+    | plataforma |
+    | AppStore   |
+    | PlayStore  |
