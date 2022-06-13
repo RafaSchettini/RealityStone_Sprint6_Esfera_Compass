@@ -20,18 +20,5 @@ module Pages
 
         element :price_points, 'p[class="-textboldtwenty"] text:first-of-type'
 
-        def open_and_change_qtt
-            
-            sleep 2
-            btn_open_qtt.click
-
-            wait_until_points_dropbox_visible
-            wait_until_btn_qtt_options_visible
-
-            sleep 2
-            btn_qtt_options[1].click
-
-        end
-
     end
 end

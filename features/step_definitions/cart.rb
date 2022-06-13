@@ -16,10 +16,24 @@ end
 
 Quando('alterar a quantidade de um certo produto') do
     @price_before = @cart_page.price_points['textContent']
-    @cart_page.open_and_change_qtt()
+    @cart_page.btn_open_qtt.click
+    @cart_page.btn_qtt_options[1].click
+    sleep 3
+end
+
+Quando('remover um produto') do
+    pending # Write code here that turns the phrase above into concrete actions
+end
+
+Quando('desejar adicionar mais produtos') do
+    pending # Write code here that turns the phrase above into concrete actions
+end
+
+Então('deverá ser redirecionado para página inicial') do
+    pending # Write code here that turns the phrase above into concrete actions
 end
   
-Então('preço final deverá ser alterado') do
+Então('preço final deverá ser alterado') do 
     expect(@cart_page.price_points['textContent']).not_to eql @price_before
 end
 
