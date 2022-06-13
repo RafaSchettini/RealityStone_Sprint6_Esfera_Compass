@@ -17,12 +17,12 @@ Quando('adicionar um {string}') do |cupom|
     @points_page.add_coupon.click
     @points_page.input_coupon.set cupom
     @points_page.button_apply_coupon.click
-  end
+end
   
-  Então('resultados deverão ser retornados') do
+Então('resultados deverão ser retornados') do
     expect(@points_page).to have_text_error
-  end
+end
 
-  Então('deverá ser redirecionado para página de pagamento') do
+Então('deverá ser redirecionado para página de pagamento') do
     @points_page.continue_button.click
-  end
+end
