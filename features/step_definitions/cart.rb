@@ -22,15 +22,19 @@ Quando('alterar a quantidade de um certo produto') do
 end
 
 Quando('remover um produto') do
-    pending # Write code here that turns the phrase above into concrete actions
+    @cart_page.btn_remove.click
+end
+
+Então('carrinho deverá ficar vazio') do
+    expect(@cart_page).to have_empty_cart_msg
 end
 
 Quando('desejar adicionar mais produtos') do
-    pending # Write code here that turns the phrase above into concrete actions
+    @cart_page.btn_add_products.click
 end
 
 Então('deverá ser redirecionado para página inicial') do
-    pending # Write code here that turns the phrase above into concrete actions
+    expect(@home_page.current_url).to eq('https://www.esfera.com.vc/')
 end
   
 Então('preço final deverá ser alterado') do 

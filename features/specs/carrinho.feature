@@ -23,7 +23,7 @@ Funcionalidade: Carrinho
     @remove_product
     Cenário: Remover um produto
         Quando remover um produto
-        Então preço final deverá ser alterado
+        Então carrinho deverá ficar vazio
 
     @add_more_products
     Cenário: Adicionar mais produtos

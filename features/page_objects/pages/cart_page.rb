@@ -20,5 +20,10 @@ module Pages
 
         element :price_points, 'p[class="-textboldtwenty"] text:first-of-type'
 
+        element :btn_remove, 'div[class="-remove util-onlydesktop"] div[class="-removeprodlink"] span'
+        element :empty_cart_msg, '.-h3emptycart'
+
+        element :btn_add_products, 'div[class="-boxendorder"] a'
+
     end
 end
