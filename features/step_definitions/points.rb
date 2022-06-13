@@ -13,7 +13,7 @@ Então('o valor da compra deverá ser alterado') do
 end
 
 Quando('adicionar um {string}') do |cupom|
-    cupom = 'teste'
+    cupom = Factory::Static.static_data('test_cupom')
     @points_page.add_coupon.click
     @points_page.input_coupon.set cupom
     @points_page.button_apply_coupon.click

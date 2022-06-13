@@ -4,7 +4,8 @@ Dado('que o usuário esteja na página inicial') do
 end
   
 Quando('realizar a busca por um produto') do
-    @home_page.search_for("Jogo de Cama King 300 fios")
+    product_for_search = Factory::Static.static_data('valid_product')
+    @home_page.search_for(product_for_search)
     @search_results_page = Pages::SearchResults.new
 end
   

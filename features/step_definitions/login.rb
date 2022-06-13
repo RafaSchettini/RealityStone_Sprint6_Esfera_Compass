@@ -4,12 +4,12 @@ Dado('acessar página de login') do
 end
 
 Quando('o usuário informar {string}') do |dado|
-    dado = "123.321.123-12"
+    dado = Factory::Static.static_data('test_cpf')
     @login_page.input_login.set dado
 end
 
 Quando('usuário informar {string}') do |senha|
-    senha = "1234567890"
+    senha = Factory::Static.static_data('password')
     @login_page.input_password.set senha
     @login_page.btn_show_password.click
     @login_page.btn_logged.click
@@ -20,7 +20,7 @@ Quando('o usuário acessar página de cadastro') do
 end
 
 Quando('o usuário informar {string} de cadastro') do |cpf|
-    cpf = "123.321.123-12"
+    cpf = Factory::Static.static_data('test_cpf')
     @login_page.input_cpf_cadastro.set cpf
 end
 
