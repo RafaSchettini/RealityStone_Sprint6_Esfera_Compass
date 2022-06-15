@@ -17,6 +17,8 @@ module Pages
 
         elements :apps, 'li[class="-itemstoreapp"] img'
 
+        element :hello_user, 'span[class="-helloname"]'
+
         def search_for(product)
             
             header.input_and_search(product)

@@ -27,7 +27,7 @@ Funcionalidade: Home
         Quando selecionar aplicativo da "<plataforma>"
         Então deverá redirecionar para página de instalação
 
-    Exemplos:
-    | plataforma |
-    | AppStore   |
-    | PlayStore  |
+        Exemplos:
+        | plataforma |
+        | AppStore   |
+        | PlayStore  |
