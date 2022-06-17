@@ -1,2 +1,4 @@
 valid_product: 'Jogo de Cama King 300 fios'
+products_map: 'div[class="molecule-box-prod-default -pd-image -with-shadow-prod -listbox"]'
+
 test_cupom: 'cupom_teste'

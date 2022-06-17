@@ -6,7 +6,7 @@ module Pages
 
         set_url('/results')
 
-        sections :products, Sections::Products, 'div[class="molecule-box-prod-default -pd-image -with-shadow-prod -listbox"]'
+        sections :products, Sections::Products, Factory::Static.static_data('products_map')
 
         element :loader, 'div[class="general-loader"]'
         

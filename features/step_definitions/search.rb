@@ -7,7 +7,11 @@ Quando('realizar a busca por um produto') do
     product_for_search = Factory::Static.static_data('valid_product')
     @home_page.search_for(product_for_search)
     @search_results_page = Pages::SearchResults.new
-    # @search_results_page.close_ad()
+    binding.pry
+    
+    if("#{ENVIRONMENT}" == 'hml')
+        @search_results_page.close_ad()
+    end
 end
   
 Então('resultados deverão ser retornados ao usuário') do
@@ -17,5 +21,8 @@ end
 Quando('realizar a busca pelo {string}') do |products|
     @home_page.search_for(products)
     @search_results_page = Pages::SearchResults.new
-    # @search_results_page.close_ad()
+    
+    if("#{ENVIRONMENT}" == 'hml')
+        @search_results_page.close_ad()
+    end
 end

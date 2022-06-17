@@ -1,5 +1,5 @@
 default: --format pretty -p prd -p chrome
-default_hml: --format pretty -p hml -p chrome -p html
+default_hml: --format pretty -p hml -p chrome
 
 
 # Reporters
