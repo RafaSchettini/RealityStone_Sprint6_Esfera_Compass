@@ -5,7 +5,7 @@ Dado('acessar página de login') do
 end
 
 Quando('o usuário informar {string}') do |dado|
-    dado = Factory::Static.static_data('test_cpf')
+    dado = Factory::Static.static_data('test_cpf_login')
     @login_page.input_login.set dado
 end
 
