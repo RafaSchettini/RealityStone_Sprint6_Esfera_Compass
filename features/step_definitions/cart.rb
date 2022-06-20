@@ -34,7 +34,7 @@ Quando('desejar adicionar mais produtos') do
 end
 
 Então('deverá ser redirecionado para página inicial') do
-    expect(@home_page.current_url).to eq('https://www.esfera.com.vc/')
+    expect(@home_page.current_url).to eq('https://p7185399c1tst-store.occa.ocs.oraclecloud.com/')
 end
   
 Então('preço final deverá ser alterado') do 

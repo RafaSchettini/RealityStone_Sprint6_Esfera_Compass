@@ -31,7 +31,6 @@ Quando('o usuário informar {string} de cadastro') do |cpf|
     @login_page.btn_create_acc.click
 
     @sign_up_page = Pages::SignUpPage.new
-    binding.pry
     @sign_up_page.checkbox_terms.click
     @sign_up_page.btn_continue.click
 end

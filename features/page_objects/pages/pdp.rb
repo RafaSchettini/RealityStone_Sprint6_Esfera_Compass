@@ -17,7 +17,7 @@ module Pages
 
         element :product_name, 'div[class="-nameproduct"]'
 
-        element :cart_button, '.-msglink'
+        element :cart_button, '.-btnsummcart'
         
         def add_product_to_cart
 

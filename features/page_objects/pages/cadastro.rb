@@ -35,7 +35,6 @@ module Pages
             email = Factory::Dynamic.email_data_info
             input_email.set email
             input_confirm_email.set email
-            binding.pry
 
         end
 

@@ -20,10 +20,10 @@ module Pages
 
         def access_product_page(index)
 
-            if (has_loader?(visible: true))
-                wait_until_loader_visible
-                wait_until_loader_invisible
-            end
+            # if (has_loader?(visible: true))
+            #     wait_until_loader_visible
+            #     wait_until_loader_invisible
+            # end
             
             products[index].image.click
 
