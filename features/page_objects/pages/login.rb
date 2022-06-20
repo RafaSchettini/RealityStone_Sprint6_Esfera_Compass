@@ -11,10 +11,10 @@ module Pages
 
         element :btn_login, '#loginButton'
 
-        # element :create_acc, '.forgot-pass'
+        element :create_acc, '.forgot-pass'
         
-        # element :input_cpf_cadastro, '#cpfOrCnpj'
-        # element :btn_create_acc, '#firstAccessButton'
+        element :input_cpf_cadastro, '#cpfOrCnpj'
+        element :btn_create_acc, '#firstAccessButton'
             
     end
 end

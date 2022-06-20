@@ -1,5 +1,7 @@
 valid_product: 'Fone de Ouvido Sem Fio JBL'
 products_map: 'div[class="col-xs-12 col-sm-3 -marginproduct"]'
 
-test_cpf: '271.183.080-21'
+test_cpf_login: '271.183.080-21'
 test_password: '258369'
+
+test_cpf_cadastro: '125.705.400-72'

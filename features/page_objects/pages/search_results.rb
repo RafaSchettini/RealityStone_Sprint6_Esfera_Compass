@@ -13,7 +13,7 @@ module Pages
         element :btn_close_ad, '.-textclosemodal'
 
         def close_ad
-            if has_btn_close_ad?(visible: true)
+            if("#{ENVIRONMENT}" == 'hml' and has_btn_close_ad?(visible: true))
                 btn_close_ad.click
             end
         end

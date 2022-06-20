@@ -16,8 +16,9 @@ Funcionalidade: Login
         E usuário informar "<senha>"
         Então login deverá ser efetuado com sucesso
 
-    # @sign_up_validate
-    # Cenário: Validar Cadastro
-    #     Quando o usuário acessar página de cadastro
-    #     E o usuário informar "<dado>" de cadastro
-    #     Então login deverá ser efetuado com sucesso    
+    @sign_up_validate
+    Cenário: Validar Cadastro
+        Quando o usuário acessar página de cadastro
+        E o usuário informar "<dado>" de cadastro
+        E o usuário informar informações pessoais válidas
+        Então cadastro deverá ser efetuado com sucesso
