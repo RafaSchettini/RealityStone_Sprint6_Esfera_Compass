@@ -5,11 +5,11 @@ Então('deverá ter produtos na home') do
 end
 
 Quando('selecionar categoria do menu') do
-    @home_page.click_on_menu(2)
+    @home_page.click_on_menu(3)
 end
 
 Então('deverá redirecionar para a página da categoria') do
-    expect(@home_page.current_url).to end_with('mundo-gamer')
+    expect(@home_page.current_url).to end_with('/vale-compra/esf02152')
 end
 
 Quando('selecionar categoria do menu e selecionar um tópico da categoria') do
@@ -17,7 +17,7 @@ Quando('selecionar categoria do menu e selecionar um tópico da categoria') do
 end
   
 Então('deverá redirecionar para a página do tópico') do
-    expect(@home_page.current_url).to eq('https://www.esfera.com.vc/esfera-viagens')
+    expect(@home_page.current_url).to end_with('esfera-hoteis')
 end
 
 Quando('selecionar aplicativo da {string}') do |plataforma|

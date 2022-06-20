@@ -35,11 +35,9 @@ module Pages
             
             menu[index].click
 
-            if("#{ENVIRONMENT}" == 'hml')
-                wait_until_sub_menu_options_invisible
-                wait_until_sub_menu_options_visible
-            end
+            wait_until_sub_menu_options_visible
             
+            sleep 1
             sub_menu_options[index2].click
 
         end

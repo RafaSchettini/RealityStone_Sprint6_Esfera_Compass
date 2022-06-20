@@ -1,5 +1,6 @@
 #language: pt
 
+@home
 Funcionalidade: Home
     Como um usuário da Esfera
     Quero poder navegar entre as funcionalidades da home
