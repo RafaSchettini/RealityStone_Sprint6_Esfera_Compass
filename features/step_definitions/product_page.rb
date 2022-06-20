@@ -1,6 +1,11 @@
 Quando('acessar a página do produto') do
-    @search_results_page.access_product_page(8)
+    if("#{ENVIRONMENT}" == 'prd')
+        @search_results_page.access_product_page(8)
+    else
+        @search_results_page.access_product_page(3)
+    end
     @product_page = Pages::ProductPage.new
+    binding.pry
 end
 
 Quando('o usuário alterar a cor do produto') do

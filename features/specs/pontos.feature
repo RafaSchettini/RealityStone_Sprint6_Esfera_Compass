@@ -1,5 +1,6 @@
 #language: pt
 
+@points
 Funcionalidade: Pontos
     Como um usuário da plataforma Esfera
     Quero explorar as ações possíveis com pontos

@@ -34,6 +34,9 @@ module Pages
         def click_on_submenu(index, index2)
             
             menu[index].click
+
+            wait_until_sub_menu_options_invisible
+            wait_until_sub_menu_options_visible
             sub_menu_options[index2].click
 
         end
