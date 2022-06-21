@@ -25,10 +25,10 @@ Quando('selecionar aplicativo da {string}') do |plataforma|
     
     if(plataforma == "AppStore")
         @home_page.apps[0].click
-        @new_url = 'https://apps.apple.com/'
+        @new_url = @home_page.apps[0]['href']
     else
         @home_page.apps[1].click
-        @new_url = 'https://play.google.com/'
+        @new_url = @home_page.apps[1]['href']
     end
 
 end

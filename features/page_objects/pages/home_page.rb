@@ -15,7 +15,7 @@ module Pages
         
         element :btn_login, 'div[class="-containersignin"] text'
 
-        elements :apps, 'li[class="-itemstoreapp"] img'
+        elements :apps, 'li[class="-itemstoreapp"]'
 
         element :hello_user, 'span[class="-helloname"]'
 
