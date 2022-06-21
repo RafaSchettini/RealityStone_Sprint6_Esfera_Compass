@@ -3,11 +3,8 @@ Dado('possuir produtos adicionados ao carrinho') do
 end
   
 Quando('informar {string}') do |cep|
-    
     cep = Factory::Dynamic.locale_data_info
-
     @cart_page.input_cep(cep)
-
 end
   
 Então('mensagem de validação deverá ser exibida') do

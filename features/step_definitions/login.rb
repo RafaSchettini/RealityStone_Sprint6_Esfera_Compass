@@ -13,7 +13,6 @@ Quando('usuário informar {string}') do |senha|
     senha = Factory::Static.static_data('test_password')
     @login_page.input_password.set senha
     @login_page.btn_show_password.click
-
     @login_page.btn_login.click
 end
 
@@ -29,7 +28,6 @@ Quando('o usuário informar {string} de cadastro') do |cpf|
     cpf = Factory::Static.static_data('test_cpf_cadastro')
     @login_page.input_cpf_cadastro.set cpf
     @login_page.btn_create_acc.click
-
     @sign_up_page = Pages::SignUpPage.new
     @sign_up_page.checkbox_terms.click
     @sign_up_page.btn_continue.click

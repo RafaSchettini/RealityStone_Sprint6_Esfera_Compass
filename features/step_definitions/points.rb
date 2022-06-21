@@ -1,7 +1,6 @@
 Quando('acessar página de compra de pontos') do
     @home_page.click_on_submenu(5, 2)
     @points_page = Pages::PointsPage.new
-    
     @search_results_page = Pages::SearchResults.new
     @search_results_page.close_ad()
 end

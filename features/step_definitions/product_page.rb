@@ -5,7 +5,6 @@ Quando('acessar a página do produto') do
         @search_results_page.access_product_page(1)
     end
     @product_page = Pages::ProductPage.new
-    
     @search_results_page = Pages::SearchResults.new
     @search_results_page.close_ad()
 
