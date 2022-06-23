@@ -8,6 +8,7 @@ Funcionalidade: Pontos
 
     Contexto: Estar na Home
         Dado que o usuário esteja na página inicial
+        E o usuário esteja logado
         Quando acessar página de compra de pontos
 
     @change_points_qtt
@@ -22,7 +23,7 @@ Funcionalidade: Pontos
 
     @buy_points
     Cenário: Compra de pontos
-        Quando alterar a quantidade de pontos a serem comprados
-        Então deverá ser redirecionado para página de pagamento
-
-       
+        E alterar a quantidade de pontos a serem comprados
+        E ser redirecionado para página de pagamento
+        E informar dados do cartão de crédito
+        Então compra deverá ser efetuada com sucesso

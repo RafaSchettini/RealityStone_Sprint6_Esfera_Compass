@@ -23,7 +23,7 @@ module Pages
         def click_on_submenu(index, index2)
             menu[index].click
             wait_until_sub_menu_options_visible
-            sleep 1
+            sleep 2
             sub_menu_options[index2].click
         end
     end

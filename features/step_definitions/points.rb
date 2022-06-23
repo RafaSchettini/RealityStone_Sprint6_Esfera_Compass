@@ -25,6 +25,36 @@ Então('resultados deverão ser retornados') do
     expect(@points_page).to have_text_error
 end
 
-Então('deverá ser redirecionado para página de pagamento') do
+Então('ser redirecionado para página de pagamento') do
     @points_page.continue_button.click
+    @cart_page = Pages::CartPage.new
+    @cart_page.go_to_cart.click
+    @cart_page.btn_order_confirm.click
+end
+
+Quando('informar dados do cartão de crédito') do
+    @cart_page.input_cc.set "4012001037141112"
+    @cart_page.input_name.set "Teste Testador"
+    @cart_page.input_vencimento.set "12/24"
+    @cart_page.input_cvv.set "123"
+    @cart_page.input_cpf.set cpf = Factory::Static.static_data("test_cpf_cadastro")
+    @cart_page.open_parcel.click
+    @cart_page.parcels[1].click
+    @cart_page.input_cep.set "84950-000"
+    @cart_page.billing_address.set "Teste Rua"
+    @cart_page.bairro.set "Bairro Teste"
+    @cart_page.bairro_num.set "123"
+end
+
+Então('compra deverá ser efetuada com sucesso') do
+    # pending
+end
+
+Dado('o usuário esteja logado') do
+    steps %{
+        E acessar página de login
+        Quando o usuário informar "<dado>"
+        E usuário informar "<senha>"
+        Então login deverá ser efetuado com sucesso
+    }
 end
